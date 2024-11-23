@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <!-- START carousel -->
+ <div class="carousel lg:w-full lg:h-[600px]">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img
+      src="static/img/web2.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="static/img/slide1.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="static/img/slide3.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  
+ 
+</div>
+  <!-- END carousel -->
+
+
+  <!-- card view  -->
+   <section class="lg:flex justify-around lg:py-[80px] bg-indigo-100  sm:w-[100%]">
+   <div class="card card-compact bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img
+      src="static/img/machine.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body sm:w-[100%]">
+    <h2 class="card-title text-white">Machine Learning </h2>
+    <p>This is our free demo class of Artificial Inteligence and Newral Network</p>
+    <div class="card-actions justify-end">
+      <button class="btn text-white btn-primary"><a href="https://www.youtube.com/watch?v=i_LwzRVP7bg&pp=ygUcbWFjaGluZSBsZWFybmluZyBmdWxsIGNvdXJzZQ%3D%3D">watch now</a></button>
+    </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img
+      src="static/img/web.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body exceptional">
+    <h2 class="card-title text-white">web Development</h2>
+    <p>This is our free demo class of full stack web Development</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary text-white">watch now</button>
+    </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img
+      src="static/img/mobile.jpg"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-white">Android apps Development</h2>
+    <p>This is our free demo class of Artificial Inteligence and Newral Network</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary text-white">watch now</button>
+    </div>
+  </div>
+</div>
+
+</section>
+<!-- END card view -->
+
+<!-- START map  and contact form -->
+ <section class="lg:px-[80px] bg-indigo-50 py-5 lg:flex justify-between md:py-5">
+    <div class="rounded-md">
+    <iframe class="rounded-md "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25792.760641901616!2d90.24213278316844!3d23.847054763543696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755eb558a86d98d%3A0x4fb26e981d9a34f6!2z4Ka44Ka-4Kat4Ka-4KawIOCmpeCmvuCmqOCmviDgpqzgpr7gprgg4Ka34KeN4Kaf4KeN4Kav4Ka-4Kao4KeN4Kah!5e0!3m2!1sbn!2sbd!4v1730982637169!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="w-[300px]">
+        <form action="sendmail.php" method="post">
+            <h1 class="text-blue-800 text-2xl font-bold text-center after">contact us</h1>
+            <h1 class="text-black my-[10px] font-bold" >Enter your E-mail</h1>
+            <input class="w-[90%] border-none rounded-md outline-none border-indigo-100" type="text" name="email" placeholder="sample@gmail.com "> 
+            <input type="text" name="subject">
+            <input name="message" class=" border-none my-3 rounded-md " placeholder="send your message"  ></input>
+            <button name="message" type="submit"   class="w-[100%] bg-blue-500 text-white py-2 rounded-md cursor-pointer">submit</button>
+        </form>
+      
+    </div>
+ </section>
+{% endblock content %}
+
+ 
+
+
+    
+
+</body>
+</html>

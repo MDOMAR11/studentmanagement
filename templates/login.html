@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <body class="flex justify-center items-center h-screen">
+    <form action="" class="bg-black w-[400px] h-[400px] p-10 shadow-lg ">
+      <h1 class="text-fuchsia-500	text-2xl text-center">Login</h1>
+      <i class="fa-solid fa-envelope relative  top-12 left-3"></i>
+      <input class="newin  py-4 bg-black my-2 w-[300px] px-[40px]" type="text" placeholder="Enter your E-mail"><br>
+      <i class="fa-solid fa-lock relative left-6 top-12  pr-[50px] "></i>
+      <input class=" newin py-4   bg-black my-2 w-[300px] px-[50px]" type="text" placeholder="Enter your E-mail"><br>
+      
+      <input class="border-none outline-none   w-[300px] cursor-pointer bg-fuchsia-500 py-2 my-4 text-slate-950	font-bold text-xl" type="submit" value="Login"><br>
+      <h1>you have not account <a class="text-green-500 font-semibold" href="/register">Register</a></h1>
+    </form>
+  </body>
+</html>
+{% endblock content %}

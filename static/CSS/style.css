@@ -1,0 +1,35 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.after::after{
+  content: "";
+  width: 150px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: green;
+  display: block;
+  margin-left: 80px;
+  margin-top: 10px;
+  
+}
+.newin{
+  border: none;
+  outline: none;
+  border-bottom: 5px solid red;
+
+}
+
+/* admission */
+.bg{
+  background: linear-gradient(4deg, rgb(24 22 22 / 98%), rgb(15 14 14 / 65%)), url('static/img/university.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}

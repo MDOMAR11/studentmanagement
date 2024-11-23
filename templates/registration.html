@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+    {% block content %}
+    <form action="">
+      <h1 class="text-white font-bold text-[30px] text-center py-4 ">Registration</h1>
+        <div class="flex ">
+            <div>
+                <div class="flex justify-between py-2">
+                    <h1 class="text-red-100 px-1	 font-semibold text-xl"><span class="text-red-500">*</span>First Name</h1>
+                    <input class="text-black" type="text" placeholder="Enter your first name">
+                    <h1 class="text-red-100  text-xl px-2 font-semibold"><span class="text-red-500">*</span>Last Name</h1>
+                    <input class="text-black" type="text" placeholder="Enter your last name">
+                </div>
+                <div class="flex justify-between py-4 ">
+                    <h1 class="text-red-100 font-semibold text-xl"><span class="text-red-500">*</span>E-mail</h1>
+                    <input class="text-black" type="text" placeholder="Enter your E-mail">
+                    <h1 class="text-red-100 font-semibold text-xl"><span class="text-red-500">*</span>password</h1>
+                    <input class="text-black" type="text" placeholder="password">
+                </div>
+                    
+                <div class="flex  items-center">
+                    <h1 class="text-red-100 font-semibold text-xl px-2"><span class="text-red-500">*</span> repassword</h1>
+                    <input class="text-black"  type="text" placeholder="Retype password"><br>
+                </div>
+                <button class=" btn   text-zinc-100 w-[180px] my-4 hover:bg-green-500 hover:text-white">SignUp</button>
+
+                <h1 class="text-red-100 font-semibold">you have already registered? <a class="text-green-100" href="/login">Login</a></h1>
+            </div>
+            <!-- <div class="w-[400px] h-[500px]">
+                    <img src="img/signup.png" alt="" >
+            </div> -->
+        </div>
+    </form>
+    {% endblock content %}
+    {% include "floatformat" %}
+
+</body>
+</html>

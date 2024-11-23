@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+{% block content %}
+<div>
+    <div class="bg h-[400px] w-[100%] flex items-center justify-center ">
+        <div>
+            <h1 class="text-center text-white font-extrabold text-4xl capitalize">admission page </h1>
+             <p class="text-center  text-slate-300	 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam libero tempora explicabo vitae enim corrupti harum repudiandae eaque optio sunt.</p>
+        </div>
+    </div>
+ 
+</div>
+        <h1 class="text-center text-white font-extrabold text-4xl capitalize py-[100px]">admission information</h1>
+
+<div class="px-[120px] flex justify-between">
+
+    <div>
+        <img src="static/img/cap.jpg"  width="500px" height="300px">
+    </div>
+    <!-- content -->
+    <div>
+        <h1 class=" text-black font-extrabold text-4xl capitalize py-4"> Spring 2025 Semester </h1>
+        <p>Last Date of Application: <b> 12th November 2024 </b></p>
+        <p class="py-4">Admission Test Date: <b> 25th December 2024 </b></p>
+        <ul class="list-disc list-inside">
+            <li class="hover:text-orange-300 py-2"><a href="#">Online Application</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Virtual campus tour</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Insurance Policy for Students and Guardian</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Admission Photo Frame</a></li>
+            <hr>
+          </ul>
+    </div>
+
+</div>
+<h1 class="text-center text-black font-extrabold text-4xl capitalize py-[100px]">faculty programme</h1>
+<!-- faculty -->
+<div class="px-[120px] flex justify-between">
+    <div>
+        <h1 class=" text-black font-extrabold text-4xl capitalize py-4"> Faculty of Science and <br> Information Technology
+        </h1>
+        
+        <ul class="list-disc list-inside">
+            <li class="hover:text-orange-300 py-2"><a href="#">Computer Science and Engineering</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Software Engineering</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Multimedia & Creative Technology</a></li>
+            <hr>
+            <li class="hover:text-orange-300 py-4"><a href="#">Computing and Information System</a></li>
+            <hr>
+          </ul>
+          <button class="capitalize bg-blue-700 p-3 text-white font-semibold rounded-lg my-4">apply now</button>
+    </div>
+    <div>
+        <img src="static/img/room.jpg" alt="" width="500px" height="300px">
+    </div>
+    <!-- content -->
+    
+
+</div>
+
+
+
+</div>
+
+{% endblock content %}
+{% include "footer.html" %}

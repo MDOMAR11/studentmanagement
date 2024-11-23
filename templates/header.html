@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentManagement</title>
+    <!-- tailwind css link here -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- daysi ui link here  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- CDN for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- fontawesome CDN link here -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+   <!-- link custom css -->
+     <link rel="stylesheet" href="static/CSS/style.css">
+
+</head>
+<body class="h-screen bg-white">
+
+<!-- START  header -->
+    <header class="sm:w-[100%]"  >
+    <div class="navbar bg-blue-950 lg:px-[80px] 	">
+  <div class="navbar-start  ">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <li><a>Item 1</a></li>
+        <li>
+          <a>Parent</a>
+          <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+    <a class="text-white text-xl">vivasoft</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li class=" {% if request.path == '/' %} bg-cyan-500{% endif %} "><a class="text-white" href="/">Home</a></li>
+      <li>
+        <li class="{% if request.path == '/contact/' %} bg-cyan-500{% endif %}"><a class="text-white" href="/contact">contact</a></li>
+      </li>
+      <li class="{% if request.path == '/admission/' %} bg-cyan-500{% endif %}"><a  class="text-white"href="/admission">Admission </a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn text-white" href="/register">Rgister</a>
+    
+  </div>
+</div>
+    </header>
+<!-- END  header -->
